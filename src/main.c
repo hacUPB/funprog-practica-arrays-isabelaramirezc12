@@ -3,8 +3,16 @@
 
 int main(void)
 {
-    /*Implementa aquí el código necesario para probar que las funciones realizan
-    la tarea correctamente.*/
+    int sum;
+    float avg;
+    
+    int arr[] = {0, 0, 0}; 
+    int n = sizeof(arr) / sizeof(arr[0]);  
+    
+    calcSumAverage(arr, n, &sum, &avg);
+
+    printf("La suma es: %d\n", sum);
+    printf("El promedio es: %.2f\n", avg);
 
     return 0;
 }
