@@ -3,10 +3,16 @@
 
 int main(void)
 {
-    int numeros[] = {-2, 3};  
-    int resultado = productArray(numeros, 2);
+    int sum;
+    float avg;
+    
+    int arr[] = {0, 0, 0}; 
+    int n = sizeof(arr) / sizeof(arr[0]);  
+    
+    calcSumAverage(arr, n, &sum, &avg);
 
-    printf("El producto es: %d\n", resultado);
+    printf("La suma es: %d\n", sum);
+    printf("El promedio es: %.2f\n", avg);
 
     return 0;
 }

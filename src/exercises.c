@@ -113,5 +113,11 @@ int productArray(int arr[], int n)
 
 void calcSumAverage(int arr[], int n, int *sum, float *average)
 {
-    // Escriba aquí su código
+    *sum = 0;  
+
+    for (int i = 0; i < n; i++) {
+        *sum += arr[i];  
+    }
+
+    *average = (float) (*sum) / n;  
 }
